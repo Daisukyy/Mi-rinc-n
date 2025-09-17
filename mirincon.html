@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Rincón - Dai 🌸</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      scroll-behavior: smooth;
+      background-color: #fff0f6;
+    }
+    .navbar {
+      background-color: #ffc0cb;
+    }
+    .navbar a {
+      color: white !important;
+      font-weight: bold;
+    }
+    .hero {
+      height: 100vh;
+      background: url('https://images.unsplash.com/photo-1554035319-8b5b2471d52f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzMjM4NjB8MHwxfHNlYXJjaHwxfHxzYWt1cmF8ZW58MHx8fHwxNjkyNDA2ODUy&ixlib=rb-4.0.3&q=80&w=1080') no-repeat center center/cover;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #fff;
+      position: relative;
+    }
+    .hero h1 {
+      font-size: 4rem;
+      text-shadow: 2px 2px 8px #ffb6c1;
+    }
+    .hero p {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      color: #fff;
+      text-shadow: 2px 2px 6px #ffb6c1;
+      font-weight: bold;
+    }
+    .section-title {
+      text-align: center;
+      margin: 3rem 0 2rem 0;
+      color: #ff69b4;
+    }
+    /* Tarjetas */
+    .card {
+      transition: transform 0.3s, box-shadow 0.3s;
+      opacity: 0;
+      animation: fadeIn 1s forwards;
+      animation-delay: 0.2s;
+    }
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    }
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+    /* Botones */
+    .btn-pink {
+      background-color: #ffb6c1;
+      color: white;
+      font-weight: bold;
+      transition: all 0.3s ease;
+      transform: scale(1);
+    }
+    .btn-pink:hover {
+      background-color: #ff69b4;
+      color: white;
+      transform: scale(1.05);
+      box-shadow: 0 5px 15px rgba(255,105,180,0.4);
+    }
+    .btn-pink:active {
+      transform: scale(0.95);
+      box-shadow: 0 3px 8px rgba(255,105,180,0.3);
+    }
+    /* Avatar */
+    .avatar-container {
+      margin: 20px 0;
+    }
+    .avatar {
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 5px solid #ffb6c1;
+      box-shadow: 0 5px 15px rgba(255,105,180,0.4);
+      transition: transform 0.3s ease;
+    }
+    .avatar:hover {
+      transform: scale(1.05);
+    }
+    footer {
+      background-color: #ffc0cb;
+      color: white;
+      text-align: center;
+      padding: 1rem 0;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Daisuky 🌸</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#hero">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#hobbies">Hobbies</a></li>
+          <li class="nav-item"><a class="nav-link" href="#aventuras">Aventuras</a></li>
+          <li class="nav-item"><a class="nav-link" href="#logros">Logros</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero / Bienvenida -->
+  <section id="hero" class="hero">
+    <h1>Hola, soy Dai 🌸</h1>
+    <p>Descubriendo, creando y disfrutando las pequeñas aventuras de la vida</p>
+
+    <!-- Avatar -->
+    <div class="avatar-container">
+      <img src="https://static.zerochan.net/Pomni.full.4046318.jpg" alt="Avatar Dai" class="avatar">
+    </div>
+
+    <a href="#hobbies" class="btn btn-light btn-lg mt-3">Conóceme</a>
+  </section>
+
+<!-- Hobbies -->
+<section id="hobbies" class="container my-5">
+  <h2 class="section-title"> <strong> Mis Hobbies </strong> ✨</h2>
+  <div class="row g-4">
+    <div class="col-md-3">
+      <div class="card text-center p-3">
+        <div class="card-body">
+          <div style="font-size:2rem;">🎮</div>
+          <h5 class="card-title mt-2">Videojuegos</h5>
+          <img src="https://image.itemd2r.com/blog/genshin-impact-song-of-the-welkin-moon-1754782475.webp" class="img-fluid rounded mt-2" alt="Ejemplo videojuego">
+          <p class="card-text mt-2">Uno de los videojuegos que más me gustan es Genshin Impact, me gustan muchos, de la mayoría de categorias, pero este es un juego que llevo jugando mas de 5 años y me encanta.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card text-center p-3">
+        <div class="card-body">
+          <div style="font-size:2rem;">🐹</div>
+          <h5 class="card-title mt-2">Nugget & Canelita</h5>
+          <img src="https://misanimales.com/wp-content/uploads/2021/10/pareja-hamsters-fondo-naranja.jpg?auto=webp&quality=7500&width=3840&crop=16:9,smart,safe&format=webp&optimize=medium&dpr=2&fit=cover&fm=webp&q=75&w=3840&h=2160" class="img-fluid rounded mt-2" alt="Ejemplo hámsters">
+          <p class="card-text mt-2">Nugget y Canelita son mis dos hamsters sirios, son una pareja de un macho y una hembra, son muy ruidosos por las noches, pero eso me ayuda a no sentirme sola.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card text-center p-3">
+        <div class="card-body">
+          <div style="font-size:2rem;">💕</div>
+          <h5 class="card-title mt-2">Animes de Romance</h5>
+          <img src="https://lede-admin.aftermath.site/wp-content/uploads/sites/55/2025/07/The-Fragrant-Flower-Blooms-With-Dignity-Anime-Netflix.jpg?resize=2880%2C1620" class="img-fluid rounded mt-2" alt="Ejemplo anime">
+          <p class="card-text mt-2">Me encanta disfrutar historias lindas, soy una persona que le gustan casi todos los géneros del anime, pero sin duda los de romance son mis favoritos, mi favorito es el de la fotografía, llamado Kaoru Hana wa Rin to Saku .</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card text-center p-3">
+        <div class="card-body">
+          <div style="font-size:2rem;">🎧</div>
+          <h5 class="card-title mt-2">Música</h5>
+          <img src="https://billboardphilippines.com/wp-content/uploads/2024/10/ADO-FTR-IMG-1600x838.jpg" class="img-fluid rounded mt-2" alt="Ejemplo música">
+          <p class="card-text mt-2">Ado es una cantante japonesa súper talentosa, me encanta porque tiene una voz muy poderosa y única. Se hizo famosa con la canción Usseewa y desde ahí no ha parado, todas sus canciones transmiten muchísima fuerza y emoción. Es la cantante que más escucho.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Aventuras -->
+  <section id="aventuras" class="container my-5">
+    <h2 class="section-title"> <strong>Mis Aventuras 🌸</strong></h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://www.mexicoescultura.com/galerias/espacios/principal/pezvela.jpg" class="card-img-top" alt="Pez vela">
+          <div class="card-body">
+            <h5 class="card-title">Explanada del pez vela 🏖</h5>
+            <p class="card-text">El primer lugar de Manzanillo que conocí fue la explanada del pez vela, principalmente porque tuve muchas presentaciones de baile ahí.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://s1.wklcdn.com/image_96/2898144/18183574/11472049.jpg" class="card-img-top" alt="Cerro Casa Abandonada">
+          <div class="card-body">
+            <h5 class="card-title">Cerro Casa Abandonada en Manzanillo 🌄</h5>
+            <p class="card-text">Recientemente empecé a tomarle el gusto al senderismo, aunque no tengo la condición física que me gustaría para subir los cerros rápido, disfruto hacerlo, porque cuando llego a mi destino y veo todo desde arriba siempre pienso, "valio la pena".</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://i0.wp.com/www.conocemanzanillo.com/wp-content/uploads/2020/05/Playa-San-Pedrito_Manzanillo-scaled.jpg?resize=562%2C395&ssl=1" class="card-img-top" alt="Playa Manzanillo">
+          <div class="card-body">
+            <h5 class="card-title">Playa "La boquita" en Manzanillo 🌊</h5>
+            <p class="card-text">Aunque no se nadar, el mar es una de las cosas que más me gusta ver, el sonido de las olas es muy relajante para mi.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Logros -->
+  <section id="logros" class="container my-5">
+    <h2 class="section-title"><strong>Mis Logros ✨</strong></h2>
+    <div class="row g-4">
+      <div class="col-md-6">
+        <div class="card p-3">
+          <h5 class="card-title">💻 Proyecto Web</h5>
+          <img src="https://anasaci.com/blog/creativos/tienda-online-de-cosmetica-antiedadbig858.jpg" alt="ejemplo pagina">
+          <p class="card-text">Vengo de un bachillero técnico en analista programador, así que desde el bachilleato yo ya me estaba enseñando a crear páginas web, en ese momento descubrí la pasión que tenía por el diseño de estas, diseñé una página conectada a base de datos para una cosmetóloga como trabajo escolar en el bachillerato, esa fue mi primer página web "decente".</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card p-3">
+          <h5 class="card-title">💃 Danza Folklórica</h5>
+          <img src="https://escapadas.mexicodesconocido.com.mx/wp-content/uploads/2020/10/concurso-de-huapango-en-san-joaquin-qro.jpg" class="img-fluid rounded mt-2" alt="Ejemplo danza">
+          <p class="card-text"> Fué algo que practiqué desde los 8 años apróximadamente, al inicio me gustaba mucho, pero, participé tanto en concursos durante primaria, secundaria y  mitad de bachillerato que desgraciadamente algo que inició por pasión, se fue perdiendo el gusto, sin embargo no me arrepiento.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="container my-5">
+    <h2 class="section-title"><strong>Conecta conmigo 💌</strong></h2>
+    <div class="d-flex justify-content-center gap-4 flex-wrap">
+      <a href="mailto:tuemail@ejemplo.com" class="btn btn-pink">✉ Email</a>
+      <a href="https://www.instagram.com/tuusuario" target="_blank" class="btn btn-pink">📷 Instagram</a>
+      <a href="#" class="btn btn-pink">🎮 Gamer: Daisuky</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    Hecho con cariño por Dai 🌸 — 2025
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
